@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+.Dashboard-toprow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.overview-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.toprowitem {
+  background-color: #f8e6e6; /* Background color for grid items */
+  border-top: 3px solid rgb(55, 97, 236); /* Solid black top border */
+  padding: 10px; /* Padding around the content inside the grid items */
+  text-align: center;
+  color: black;
+  border-radius: 4px;
+}
+
+.toprowitem {
+  background-color: hsl(0, 6%, 93%); /* Background color for grid items */
+  border-top: 3px solid rgb(55, 97, 236); /* Solid black top border */
+  padding: 10px; /* Padding around the content inside the grid items */
+  text-align: center;
+  color: black;
+  border-radius: 2px;
+}
