@@ -194,16 +194,16 @@ Dark Theme
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked .slider {
   /* background-color: #3f95cd;  */
   background-image: linear-gradient(to right, #3f95cd, #3ecc8e);
 }
 
-input:focus + .slider {
+input:focus .slider {
   box-shadow: 0 0 1px hsl(228, 12%, 44%);
 }
 
-input:checked + .slider:before {
+input:checked .slider:before {
   -webkit-transform: translateX(32px);
   -ms-transform: translateX(32px);
   transform: translateX(32px);
