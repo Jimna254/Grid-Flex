@@ -32,11 +32,18 @@
         <div class="header">
           <div class="toper">
             <h1>Social Media Dasboard</h1>
-            <p>Total Followers: 23,004</p>
+            <p style="color: hsl(228, 12%, 44%) ">Total Followers: 23,004</p>
           </div>
-          <div class="aside">
+          <!-- <div class="aside">
             <p>Dark Mode</p>
             <div class="toggle_wrap"><div class="toggle"></div></div>
+          </div> -->
+          <div class="color-toggle">
+            <p class="toggle">Dark Mode</p>
+            <label class="switch">
+              <input id="theme-toggle-button" class="dark-mode" type="checkbox" unchecked>
+              <span class="slider round"></span>
+            </label>
           </div>
         </div>
         <div class="Dashboard-toprow">
@@ -70,13 +77,13 @@
               <p>+90today</p>
             </div>
           </div>
-          <div class="toprowitem">
+          <div class="toprowitem" style=" border-top: 3px solid hsl(356, 69%, 56%);">
             <div class="profile">
               <img src="./images/icon-instagram.svg" />
               <p class="insta-username">@nathanf</p>
             </div>
             <div>
-              <p class="stats">11K</p>
+              <p class="stats" >11k</p>
               <p class="Followers">Followers</p>
             </div>
 
@@ -85,7 +92,7 @@
               <p>+1000 Today</p>
             </div>
           </div>
-          <div class="toprowitem">
+          <div class="toprowitem" style =" border-top: solid 3px rgb(199, 15, 15);">
             <div class="profile">
               <img src="./images/icon-youtube.svg" alt="yb icon" />
               <p class="yb-username">@nathanf</p>
@@ -237,5 +244,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">James Kariuki</a>.
     </div>
+   <script src="script.js"></script>
   </body>
 </html>
