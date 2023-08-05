@@ -50,6 +50,7 @@ Dark Theme
 */
 .dark-theme body {
   background-color: #20222f;
+  color: #fff;
 }
 
 .dark-theme .container {
@@ -57,12 +58,12 @@ Dark Theme
   color: hsl(0, 0%, 100%);
 }
 .dark-theme .toprowitem {
-  background: hsl(228, 34%, 66%);
+  background: hsl(240, 1%, 31%);
   border-radius: 6px;
   color: hsl(0, 0%, 100%);
 }
 .dark-theme .overviewitem {
-  background: hsl(228, 34%, 66%);
+  background: hsl(240, 1%, 31%);
   border-radius: 6px;
   color: hsl(0, 0%, 100%);
 }
@@ -233,6 +234,10 @@ input:checked + .slider:before {
 
   .item3 {
     font-size: medium; /* Reduce font size for better fit on smaller screens */
+  }
+  .color-toggle {
+    display: flex;
+    justify-content: flex-start;
   }
 
   /* Add more adjustments as needed for other elements */
