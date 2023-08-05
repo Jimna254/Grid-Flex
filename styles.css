@@ -8,7 +8,9 @@ body {
 }
 .container {
   width: 100%;
-  margin: 0%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
 }
@@ -22,9 +24,12 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .toper p {
   font-weight: bold;
+  font-size: 18px;
 }
 /* .toggle_wrap {
   background-color: lawngreen;
@@ -43,6 +48,10 @@ body {
 /*
 Dark Theme
 */
+.dark-theme body {
+  background-color: #20222f;
+}
+
 .dark-theme .container {
   background-color: hsl(230, 17%, 14%);
   color: hsl(0, 0%, 100%);
@@ -60,13 +69,13 @@ Dark Theme
 
 .Dashboard-toprow {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
 }
 
 .overview-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
 }
 
@@ -206,4 +215,25 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Media Querries*/
+@media screen and (max-width: 768px) {
+  .header,
+  .aside {
+    flex-direction: column; /* Change to a vertical layout for smaller screens */
+  }
+
+  .toprowitem,
+  .overviewitem {
+    /* Adjust width and padding for better fit on smaller screens */
+    width: 100%;
+    padding: 10px;
+  }
+
+  .item3 {
+    font-size: medium; /* Reduce font size for better fit on smaller screens */
+  }
+
+  /* Add more adjustments as needed for other elements */
 }
